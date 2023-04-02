@@ -1,0 +1,168 @@
+* {
+  font-family: sans-serif;
+}
+.AllHomePage {
+  display: flex;
+  flex-direction: column;
+}
+.AllHomePage .navbar {
+  display: flex;
+  flex-direction: row;
+}
+.AllHomePage .navbar nav {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+.AllHomePage .navbar ul {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+/*.AllHomePage .navbar img {
+    height: 50px;
+    width: 50px;
+  
+    text-align: center;
+  }
+  .AllHomePage .navbar .logo {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }*/
+
+.AllHomePage .navbar .logo img {
+  max-width: 100%;
+  height: auto;
+}
+.AllHomePage .navbar .right-item {
+  display: flex;
+  align-items: center;
+}
+.AllHomePage .navbar .right-item img {
+  margin-left: auto;
+}
+.AllHomePage .navbar ::before {
+  content: "";
+  /*background: url(https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80)
+        no-repeat center center/cover;*/
+  background-color: rgb(188, 188, 188);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 80px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.1;
+}
+.AllHomePage .navbar ul button {
+  padding: 5px 5px;
+  margin: 5px 5px;
+  border-style: none;
+  border-right: 2px solid black;
+  background: transparent;
+}
+.AllHomePage .navbar ul li {
+  list-style: none;
+
+  font-size: 1.4rem;
+}
+.AllHomePage .navbar ul li a {
+  text-decoration: none;
+  text-align: center;
+  margin: 5px 29px;
+  padding: 5px 5px;
+
+  position: relative;
+  color: rgb(37, 37, 37);
+}
+
+.AllHomePage .navbar ul li :hover {
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.AllHomePage .Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+}
+.AllHomePage .Container h1 {
+  text-align: center;
+}
+.AllHomePage .Container .aboutUs {
+  border: 2px solid black;
+}
+.AllHomePage .Container .factSheet {
+  border: 2px solid black;
+}
+.AllHomePage .Container .factSheet .box {
+  display: flex;
+  flex-direction: row;
+}
+.AllHomePage .Container .factSheet .box1 {
+  display: flex;
+  flex-direction: row;
+}
+.AllHomePage .Container .factSheet .box2 {
+  display: flex;
+  flex-direction: row;
+}
+.AllHomePage .Container .whyUs {
+  border: 2px solid black;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  background-color: rgb(18, 130, 211);
+  height: 226px;
+  width: auto;
+  color: white;
+}
+footer .nameContact {
+  margin-right: 15px;
+  margin-top: 15px;
+}
+footer .nameContact img {
+  display: inline-block;
+}
+footer .socialMediaLinks {
+  margin-right: 15px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .socialMediaLinks li {
+  list-style: none;
+}
+footer .socialMediaLinks li a {
+  text-decoration: none;
+  color: white;
+  padding: 9px 12px;
+  margin: 5px 5px;
+}
+footer .socialMediaLinks li a:hover {
+  background-color: rgb(18, 130, 211);
+  color: black;
+  text-decoration: underline;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+footer .address {
+  margin-right: 15px;
+  margin-top: 15px;
+}
