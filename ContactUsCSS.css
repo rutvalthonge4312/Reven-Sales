@@ -4,6 +4,8 @@
 .AllHomePage {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .AllHomePage .navbar {
   display: flex;
@@ -25,16 +27,16 @@
 }
 
 /*.AllHomePage .navbar img {
-    height: 50px;
-    width: 50px;
-  
-    text-align: center;
-  }
-  .AllHomePage .navbar .logo {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }*/
+      height: 50px;
+      width: 50px;
+    
+      text-align: center;
+    }
+    .AllHomePage .navbar .logo {
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }*/
 
 .AllHomePage .navbar .logo img {
   max-width: 100%;
@@ -50,7 +52,7 @@
 .AllHomePage .navbar ::before {
   content: "";
   /*background: url(https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80)
-        no-repeat center center/cover;*/
+          no-repeat center center/cover;*/
   background-color: rgb(225, 225, 225);
   position: absolute;
   top: 0px;
@@ -89,131 +91,70 @@
   border-radius: 10px;
   transition: all 0.5s ease;
 }
-.AllHomePage .Container {
+.AllHomePage .formFill {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  line-height: 1.5;
+  padding: 25px 25px;
+  margin-top: 95px;
+  margin-bottom: 80px;
+  width: 50%;
 }
-.AllHomePage .Container h1 {
-  text-align: center;
+.AllHomePage .formFill .formElement {
+  border: 1px solid rgb(82, 82, 82);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px;
+  box-shadow: 1px 1px rgb(213, 213, 213);
+}
+.AllHomePage .formFill .formElement h2 {
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgb(82, 82, 82);
+}
+.AllHomePage .formFill input,
+textarea {
+  margin: 15px 0;
+  background-color: #ececec;
+  width: 95%;
+  box-shadow: 2px 2px rgb(179, 179, 179);
+}
+.AllHomePage .formFill button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  background-color: #1e64b6;
+  color: white;
+  width: 50%;
+  height: 2.3rem;
+}
+.AllHomePage .formFill :hover {
+  background-color: white;
   color: black;
+  cursor: pointer;
 }
-.AllHomePage .Container .aboutUs {
-  margin-bottom: 32px;
-  color: rgb(75, 75, 75);
+/*.AllHomePage .formFill label {
+  margin: 25px 0;
 }
-.AllHomePage .Container .factSheet {
-  display: flex;
-  flex-direction: column;
-  margin: 5px 5px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+.AllHomePage .formFill input,
+textarea {
+  margin: 25px 0;
 }
-.AllHomePage .Container .factSheet h2 {
-  color: rgb(0, 0, 0);
-  font-size: 15px;
-}
-.AllHomePage .Container .factSheet .box {
-  display: flex;
-  flex-direction: row;
-  padding: 15px 15px;
-  margin: 15px 15px;
-  list-style: none;
-  width: 95%;
-  border-bottom: 2px solid black;
-  justify-content: center;
-  align-items: center;
-}
-.AllHomePage .Container .factSheet .box .leftInFactSheet {
-  margin-right: 15px;
-}
-.AllHomePage .Container .factSheet .box .leftInFactSheet li {
-  margin-top: 15px;
-  margin-right: 25px;
-  color: rgb(75, 75, 75);
-}
-.AllHomePage .Container .factSheet .box .rightInFactSheet {
-  margin-right: 15px;
-}
-.AllHomePage .Container .factSheet .box .rightInFactSheet li {
-  margin-top: 15px;
-  margin-left: 25px;
-  color: rgb(75, 75, 75);
-}
-.AllHomePage .Container .factSheet .box1 {
-  display: flex;
-  flex-direction: row;
-  padding: 15px 15px;
-  margin: 15px 15px;
-  width: 95%;
-  justify-content: center;
-  align-items: center;
-  list-style: circle;
-
-  border-bottom: 2px solid black;
-}
-.AllHomePage .Container .factSheet .box1 .leftInBox1 {
-  margin-right: 15px;
-}
-.AllHomePage .Container .factSheet .box1 .leftInBox1 li {
-  margin-top: 15px;
-  margin-right: 25px;
-  color: rgb(75, 75, 75);
-}
-.AllHomePage .Container .factSheet .box1 .rightInBox1 {
-  margin-right: 15px;
-}
-.AllHomePage .Container .factSheet .box1 .rightInBox1 li {
-  margin-top: 15px;
-  margin-left: 25px;
-  color: rgb(75, 75, 75);
-}
-.AllHomePage .Container .factSheet .box2 {
-  display: flex;
-  flex-direction: row;
-  padding: 15px 15px;
-  margin: 15px 15px;
-  list-style: none;
-  width: 95%;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 2px solid black;
-}
-.AllHomePage .Container .factSheet .box2 .leftInBox2 {
-  margin-right: 15px;
-}
-.AllHomePage .Container .factSheet .box2 .leftInBox2 li {
-  margin-top: 15px;
-  margin-right: 25px;
-  color: rgb(75, 75, 75);
-}
-.AllHomePage .Container .factSheet .box2 .rightInBox2 {
-  margin-right: 15px;
-}
-.AllHomePage .Container .factSheet .box2 .rightInBox2 li {
-  margin-top: 15px;
-  margin-left: 25px;
-  color: rgb(75, 75, 75);
-}
-.AllHomePage .Container .whyUs {
+.AllHomePage .formFill button {
   margin-top: 25px;
-  color: rgb(75, 75, 75);
-  list-style: none;
-}
-.AllHomePage .Container .whyUs p,
-li,
-h2 {
-  color: rgb(75, 75, 75);
-}
+  position: relative;
+}*/
 footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
   margin-top: 15px;
   background-color: rgb(18, 130, 211);
   position: relative;
