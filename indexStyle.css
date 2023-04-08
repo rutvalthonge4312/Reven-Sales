@@ -1,9 +1,11 @@
 * {
-  font-family: sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .AllHomePage {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .AllHomePage .navbar {
   display: flex;
@@ -25,16 +27,16 @@
 }
 
 /*.AllHomePage .navbar img {
-  height: 50px;
-  width: 50px;
-
-  text-align: center;
-}
-.AllHomePage .navbar .logo {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}*/
+        height: 50px;
+        width: 50px;
+      
+        text-align: center;
+      }
+      .AllHomePage .navbar .logo {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }*/
 
 .AllHomePage .navbar .logo img {
   max-width: 100%;
@@ -50,8 +52,8 @@
 .AllHomePage .navbar ::before {
   content: "";
   /*background: url(https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80)
-      no-repeat center center/cover;*/
-  background-color: rgb(188, 188, 188);
+            no-repeat center center/cover;*/
+  background-color: rgb(225, 225, 225);
   position: absolute;
   top: 0px;
   left: 0px;
@@ -69,7 +71,7 @@
 }
 .AllHomePage .navbar ul li {
   list-style: none;
-
+  margin: 0 25px;
   font-size: 1.4rem;
 }
 .AllHomePage .navbar ul li a {
