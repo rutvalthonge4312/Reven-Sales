@@ -44,6 +44,9 @@
   position: relative;
   color: rgb(37, 37, 37);
 }
+.AllHomePage .navbar ul button {
+  border-bottom: 2px solid black;
+}
 .mainContainer .infoContainer {
   text-align: left;
   margin: auto;

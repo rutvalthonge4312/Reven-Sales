@@ -1,0 +1,4 @@
+.AllHomePage .navbar {
+  display: flex;
+  flex-direction: column;
+}
