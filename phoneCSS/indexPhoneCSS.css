@@ -37,6 +37,10 @@
 .mainContainer {
   display: flex;
   flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .mainContainer .infoContainer {
   text-align: center;
@@ -55,6 +59,7 @@
   height: 444px;
   width: auto;
   margin: auto;
+  text-align: center;
 }
 footer {
   font-size: 0.5rem;
