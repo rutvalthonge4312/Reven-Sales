@@ -1,14 +1,8 @@
 .AllHomePage .navbar {
   display: flex;
-  flex-direction: row;
-}
-.AllHomePage {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
-.AllHomePage .navbar nav ul {
+.AllHomePage .navbar nav {
   display: flex;
   flex-direction: column;
 
@@ -16,18 +10,15 @@
   align-items: center;
   justify-items: center;
 }
-.AllHomePage .navbar ::before {
-  content: "";
-  /*background: url(https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80)
-            no-repeat center center/cover;*/
-  background-color: rgb(225, 225, 225);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 335px;
-  width: 80%;
-  z-index: -1;
-  opacity: 0.1;
+.AllHomePage .navbar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+.AllHomePage .navbar .right-item img {
+  margin: auto;
 }
 .AllHomePage .formFill {
   width: 100%;
