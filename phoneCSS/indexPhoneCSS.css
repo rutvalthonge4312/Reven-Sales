@@ -1,3 +1,6 @@
+.AllHomePage {
+  width: auto;
+}
 .AllHomePage .navbar {
   display: flex;
   flex-direction: column;
@@ -62,5 +65,7 @@
   text-align: center;
 }
 footer {
+  border: 2px solid black;
+  width: 105%;
   font-size: 0.5rem;
 }
