@@ -20,6 +20,9 @@
 .AllHomePage .navbar .right-item img {
   margin: auto;
 }
+.AllHomePage .navbar ::before {
+  height: 360px;
+}
 .mainContainer .infoContainer {
   text-align: left;
   margin: auto;
