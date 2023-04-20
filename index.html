@@ -56,10 +56,10 @@
               </div>
             </li>
             <li>
-              <button class="rightimg">Sin Up</button>
+              <button class="rightimg" id="SinUp">Sin Up</button>
             </li>
             <li>
-              <button class="rightimg">Log In</button>
+              <button class="rightimg" id="LogIn">Log In</button>
             </li>
           </ul>
         </nav>
@@ -132,5 +132,12 @@
         </div>
       </footer>
     </div>
+    <script>
+      const sinInButton = document.getElementById("LogIn");
+
+      sinInButton.addEventListener("click", function () {
+        window.location.href = "LogInPage.html";
+      });
+    </script>
   </body>
 </html>
